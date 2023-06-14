@@ -1,0 +1,14 @@
+{
+    "hjp.znanje.hr-definicija": {
+        "url": "https://hjp.znanje.hr/index.php?show=search",
+        "xpath": "//*[@id=\"definicija\"]/div",
+        "method": "POST",
+        "params": ["word"]
+    },
+    "hjp.znanje.hr": {
+        "url": "https://hjp.znanje.hr/index.php?show=search",
+        "xpath": "/html/body/div[7]/div[1]/div/p[2]",
+        "method": "POST",
+        "params": ["word"]
+    }
+}
