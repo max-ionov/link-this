@@ -57,7 +57,7 @@ def linker(service, params):
         return ''
     kwargs = {('params' if method == 'GET' else 'data'): config[service]['params'](params)}
 
-    r = requests.request(config[service].get('method', 'GET'), config[service]['url'], **kwargs)
+    r = requests.request(config[service].get('method', 'GET'), config[service]['url'], verify=False, **kwargs)
     if r.status_code != 200:
         return ''
 
